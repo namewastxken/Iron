@@ -1,0 +1,134 @@
+#############################
+# IRON MAIN CONFIGURATION   #
+#############################
+
+###########################
+#                         #
+#  SCOREBOARD SETTINGS    #
+#                         #
+###########################
+# VARIABLES
+# %prison_rank% - player's prison rank
+# %prestige% - player's prestige
+# %money% - player balance (vault)
+# %rank% - player rank
+# %date% - data
+# %time% - time
+
+################################
+#                              #
+#  MONGO DATABASE INFORMATION  #
+#                              #
+################################
+host: localhost
+port: 27017
+database: iron
+username: user
+password: password
+
+scoreboard-title: "&b&lPRISON"
+
+scoreboard-lines:
+  - "&7&m-----------------------"
+  - "Configure the scoreboard"
+  - "in the config.yml"
+  - "&7&m------------------------"
+
+################################
+#                              #
+#       PLAYER SETTINGS        #
+#                              #
+################################
+disable-item-damage: false
+
+################################
+#                              #
+#       TOKEN SETTINGS         #
+#                              #
+################################
+give-tokens-on-mine: true
+token-amount-per-block-mined: 1
+
+################################
+#                              #
+#          ENCHANTER            #
+#                              #
+################################
+enchanter-inventory:
+  title: "&5Enchant Your Pickaxe"
+  size: 36
+
+enchant-amounts:
+  left-click: 1
+  right-click: 5
+  shift-click: 10
+
+enchants:
+  efficiency:
+    price-per-level: 50000
+    enchant-name: "efficiency"
+    display-item:
+      item: "DIAMOND_PICKAXE"
+      name: "&bEfficiency"
+      data: 0
+      slot: 13
+      lore:
+        - "&7Click to enchant your pickaxe with &fEfficiency"
+        - "&7Cost Per Level:&f $%cost_per_level%"
+        - ""
+        - "&bLeft Click&7 to enchant &f%left_click_amount%&7 level."
+        - "&bRight Click&7 to enchant &f%right_click_amount%&7 levels."
+        - "&bShift Click&7 to enchant &f%shift_click_amount%&7 levels."
+
+################################
+#                              #
+#          MESSAGES            #
+#                              #
+################################
+
+rank-inventory:
+  title: "§bPrison Ranks"
+  completed-rank:
+    item: DIAMOND_PICKAXE
+    data: 0
+    name: "&a%rank%"
+    lore:
+      - "&7You have completed this prison rank already!"
+      - ""
+      - "&a&lCOMPLETED"
+  locked-rank:
+    item: BARRIER
+    data: 0
+    name: "&c%rank%"
+    lore:
+      - "&7You have not ranked up to this rank yet!"
+      - ""
+      - "&7Progress: &f%balance%&7/&f%rankup_price% &8(&a%percentage_complete% complete&8)"
+      - ""
+      - "&c&lLOCKED"
+
+messages:
+  max-rank: "&cYou are the max rank!"
+  rankup-success:
+    - "&7&m-------------------------"
+    - "&aYou have successfully ranked up"
+    - "&ato &f%rank%"
+    - "&7&m-------------------------"
+  cannot-rankup: "&cYou can't rank up yet, you need %price% to rank up."
+  cannot-prestige: "&cYou can't prestige yet. You must be the last rank!"
+  max-prestige: "&cYou can't prestige any more, you are the max prestige!"
+  successful-prestige: "&aYou have successfully prestiged to prestige &f%prestige%§a. Your rankup prices are now %multiplier% higher than the first time."
+  created-warp: "&aYou have successfully created a new&f %warp_type%&a warp, named: &f%warp_name%"
+  deleted-warp: "&aYou have successfully deleted a warp named: &f%warp_name%"
+  invalid-warp: "&cWarp not found!"
+  warping-to-warp: "&bYou are now warping to: &f%name%"
+  warp-list: "&bA list of warps are: &f%warps%"
+  enchant-successful: "&7You have successfully enchanted added &f%level% &7levels of &f%enchant%&7 &7to your pickaxe."
+  insufficient-funds-to-enchant: "&cYou don't have enough tokens to enchant this item, you need %money%."
+  would-exceed-max-enchant: "&5[Enchanter] &cEnchanting has been cancelled because it would have exceeded the maximum level of this enchant."
+  has-conflicting-enchant: "&5[Enchanter] &cYou cannot add %enchant% to your item because it conflicts with %conflict%."
+  progress_bar:
+    symbol: ':'
+    completed-color: GREEN
+    not-completed-color: RED
+    bar-size: 25

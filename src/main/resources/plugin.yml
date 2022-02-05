@@ -1,0 +1,19 @@
+name: Iron
+version: "1.0"
+main: com.hylandermc.iron.Iron
+depend: ["Vault", "PlaceholderAPI", "TokenEnchant"]
+commands:
+  rankup:
+  prisonadmin:
+    aliases: ["prison", "iron"]
+  setwarp:
+    aliases: ["createwarp"]
+  delwarp:
+    aliases: ["deletewarp"]
+  warp:
+    aliases: ["warps"]
+  ranks:
+    aliases: ["progress"]
+  prestige:
+  enchanter:
+    aliases: ["upgrade"]

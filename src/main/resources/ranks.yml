@@ -1,0 +1,107 @@
+max-prestige: 1
+prestige-price-multiplier-per-prestige: 0.25
+ranks:
+  rank1:
+    name: A
+    price: 0
+    defaultRank: true
+  rank2:
+    name: B
+    price: 1000
+    defaultRank: false
+  rank3:
+    name: C
+    price: 1000
+    defaultRank: false
+  rank4:
+    name: D
+    price: 1000
+    defaultRank: false
+  rank5:
+    name: E
+    price: 1000
+    defaultRank: false
+  rank6:
+    name: F
+    price: 1000
+    defaultRank: false
+  rank7:
+    name: G
+    price: 1000
+    defaultRank: false
+  rank8:
+    name: H
+    price: 1000
+    defaultRank: false
+  rank9:
+    name: I
+    price: 1000
+    defaultRank: false
+  rank10:
+    name: J
+    price: 1000
+    defaultRank: false
+  rank11:
+    name: K
+    price: 1000
+    defaultRank: false
+  rank12:
+    name: L
+    price: 1000
+    defaultRank: false
+  rank13:
+    name: M
+    price: 1000
+    defaultRank: false
+  rank14:
+    name: N
+    price: 1000
+    defaultRank: false
+  rank15:
+    name: O
+    price: 1000
+    defaultRank: false
+  rank16:
+    name: P
+    price: 1000
+    defaultRank: false
+  rank17:
+    name: Q
+    price: 1000
+    defaultRank: false
+  rank18:
+    name: R
+    price: 1000
+    defaultRank: false
+  rank19:
+    name: S
+    price: 1000
+    defaultRank: false
+  rank20:
+    name: T
+    price: 1000
+    defaultRank: false
+  rank21:
+    name: U
+    price: 1000
+    defaultRank: false
+  rank22:
+    name: V
+    price: 1000
+    defaultRank: false
+  rank23:
+    name: W
+    price: 1000
+    defaultRank: false
+  rank24:
+    name: X
+    price: 1000
+    defaultRank: false
+  rank25:
+    name: Y
+    price: 1000
+    defaultRank: false
+  rank26:
+    name: Z
+    price: 1000
+    defaultRank: false
